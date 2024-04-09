@@ -161,7 +161,7 @@ typedef struct {
 
 typedef struct {
     uint32_t length; /* Total length of this extension message (including this header) */
-    uint16_t type; /* Type of this extension message (see clusterMsgPingExtTypes) */
+    uint16_t type; /* Type of this extension message (see clusterMsgPingtypes) */
     uint16_t unused; /* 16 bits of padding to make this structure 8 byte aligned. */
     union {
         clusterMsgPingExtHostname hostname;
